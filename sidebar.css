@@ -1,0 +1,31 @@
+#sidebar{
+  grid-column: 1 ;
+  grid-row: 1 / -1;
+  background-color: darkslategray;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  /* height: minmax(100vh, 1fr); */
+}
+
+#sidebar > *{
+  background-color: white;
+  padding: 20px;
+}
+
+.main-navigation,
+.support-navigation{
+  display: grid;
+  gap: 20px;
+}
+
+.logo, 
+.main-navigation > *,
+.support-navigation > *{
+  display: flex;
+  gap: 16px;
+
+}
