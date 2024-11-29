@@ -1,25 +1,23 @@
 #sidebar{
   grid-column: 1 ;
   grid-row: 1 / -1;
-  background-color: darkslategray;
+  background-color: var(--violet-900);
   padding: 10px;
 
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 15px;
 
-  /* height: minmax(100vh, 1fr); */
 }
 
 #sidebar > *{
-  background-color: white;
   padding: 20px;
 }
 
 .main-navigation,
 .support-navigation{
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 
 .logo, 
@@ -27,5 +25,54 @@
 .support-navigation > *{
   display: flex;
   gap: 16px;
+  align-items: center;
+  padding: 10px;
 
 }
+
+.main-navigation > *,
+.support-navigation > *{
+  transition: transform 0.25s, background-color 0.25s;
+}
+
+#sidebar span img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+#sidebar span[class="icon-container"]{
+  width: 20px;
+  height: auto;
+}
+
+.logo{
+  cursor: pointer;
+}
+.logo span[class="logo-container"]{
+  width: 40px;
+  height: 40px;
+}
+
+.logo :nth-child(2){
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo :nth-child(2),
+.main-navigation > * :nth-child(2),
+.support-navigation > * :nth-child(2){
+  color: white;
+}
+
+.main-navigation > * :nth-child(2),
+.support-navigation > * :nth-child(2){
+  font-size: 18px;
+}
+
+.main-navigation div:hover,
+.support-navigation div:hover{
+  cursor: pointer;
+  background-color: var(--violet-800);
+  transform: scale(110%) translateX(5%); 
+  
+}
+

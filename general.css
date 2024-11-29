@@ -1,6 +1,16 @@
+:root{
+  --violet-50: #f5f3ff;
+  --violet-300: #c4b5fd;
+  --violet-800: #5b21b6;
+  --violet-900: #4c1d95;
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
+}
+p{
+  line-height: 1.5;
 }
 
 #container{
