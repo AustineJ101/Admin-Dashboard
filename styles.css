@@ -45,3 +45,77 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* CSS Reset End */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+}
+
+.container .sidebar{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    gap: 30px;
+}
+
+.logo{
+    background-color: red;
+}
+
+nav{
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+nav .main-nav{
+    background-color: orange;
+}
+.container .right-section{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+header .top-section{
+    background-color: hotpink;
+}
+
+header .bottom-section{
+    background-color: orangered;
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-left-section{
+    background-color: goldenrod;
+    padding: 30px 20px;
+}
+
+.main-right-section{
+    background-color: lightcoral;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+.announcements{
+    background-color: blue;
+}
+
+.trending{
+    background-color: purple;
+}
+
