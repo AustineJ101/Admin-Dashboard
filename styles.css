@@ -130,19 +130,99 @@ nav .main-nav{
     grid-template-rows: 1fr 3fr;
 }
 
+/* Header Styles Start */
 header{
     display: grid;
     grid-template-rows: 50% 50%;
 }
 
-header .top-section{
-    background-color: hotpink;
+header .top-section,
+header .bottom-section{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section .profile{
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+header .top-section svg{
+    width: 20px;
+    cursor: pointer;
+}
+
+input[type="search"]{
+    border: none;
+    width: 500px;
+    border-radius: 16px;
+    background-color: lightgray;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+input[type="search"]:focus{
+    outline: none;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+header .top-section > div,
+header .bottom-section > div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header .bottom-section .profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+header .bottom-section > div:first-child > div:last-child{
+    display: flex;
+    flex-direction: column;
+} 
+
+.bottom-section span{
+    font-size: 12px;
+}
+
+header .bottom-section > div:last-child{
+    gap: 20px;
+    font-weight: normal;
+}
+
+header .bottom-section button{
+    border: none;
+    padding: 5px 25px;
+    border-radius: 20px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+
+header button:hover{
+    transform: scale(1.05)
+}
+header .bottom-section > div:first-child{
+    font-size: 22px;
 }
 
 header .bottom-section{
-    background-color: orangered;
+    box-shadow: 0  2px 5px -2px rgba(0, 0, 0, 0.5);
 }
 
+/* Header Styles End */
 
 .main{
     display: grid;
@@ -150,7 +230,7 @@ header .bottom-section{
 }
 
 .main-left-section{
-    background-color: goldenrod;
+    background-color: gray;
     padding: 30px 20px;
 }
 
